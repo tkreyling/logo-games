@@ -1,5 +1,7 @@
 import React from 'react';
 import {HashRouter as Router, Link, Route, Switch, useParams} from "react-router-dom";
+import cat from './Noto_Emoji_Pie_1f408.svg';
+import couch from './Noto_Emoji_Pie_1f6cb.svg'
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,6 +13,8 @@ function Card() {
       <p>
         Number: {cardNumber}
       </p>
+      <img src={cat} className="cat" alt="cat" />
+      <img src={couch} className="couch" alt="couch" />
     </header>
   </div>);
 }
