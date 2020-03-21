@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/logo-games/static/css/main.5f361e03.chunk.css",
-    "main.js": "/logo-games/static/js/main.02f52d0c.chunk.js",
-    "main.js.map": "/logo-games/static/js/main.02f52d0c.chunk.js.map",
+    "main.js": "/logo-games/static/js/main.e2dd2cc7.chunk.js",
+    "main.js.map": "/logo-games/static/js/main.e2dd2cc7.chunk.js.map",
     "runtime-main.js": "/logo-games/static/js/runtime-main.c1fc49d9.js",
     "runtime-main.js.map": "/logo-games/static/js/runtime-main.c1fc49d9.js.map",
     "static/js/2.0599e4c5.chunk.js": "/logo-games/static/js/2.0599e4c5.chunk.js",
     "static/js/2.0599e4c5.chunk.js.map": "/logo-games/static/js/2.0599e4c5.chunk.js.map",
     "index.html": "/logo-games/index.html",
-    "precache-manifest.c5999d944b698ab548d0bfb1d9b316a9.js": "/logo-games/precache-manifest.c5999d944b698ab548d0bfb1d9b316a9.js",
+    "precache-manifest.dfac358dd61e4772a0254fd446b7520f.js": "/logo-games/precache-manifest.dfac358dd61e4772a0254fd446b7520f.js",
     "service-worker.js": "/logo-games/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/logo-games/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.0599e4c5.chunk.js.LICENSE.txt": "/logo-games/static/js/2.0599e4c5.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c1fc49d9.js",
     "static/js/2.0599e4c5.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.02f52d0c.chunk.js"
+    "static/js/main.e2dd2cc7.chunk.js"
   ]
 }
