@@ -2,6 +2,7 @@
   "name": "logo-games",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://tkreyling.github.io/logo-games",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
