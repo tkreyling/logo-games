@@ -10,15 +10,19 @@ function Card() {
 
   return (<div className="App">
     <header className="App-header">
-      <p>
-        Number: {cardNumber}
-      </p>
-      <div style={{ border: "3px solid #73AD21", position: "relative", width: "400px", height: "500px"}}>
-        <div style={{ border: "3px solid #73AD21", position: "absolute", left: "10%", top: "15%", width: "80%" }}>
-          <img src={couch} alt="couch" style={{ width: "100%" }}/>
-        </div>
-        <div style={{ border: "3px solid #73AD21", position: "absolute", left: "45%", top: "72%", width: "10%"}}>
-          <img src={cat} alt="cat" style={{ width: "100%" }} />
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <h1>Number: {cardNumber}</h1>
+          </div>
+          <div className="card-back">
+            <div style={{ border: "3px solid #73AD21", position: "absolute", left: "10%", top: "15%", width: "80%" }}>
+              <img src={couch} alt="couch" style={{ width: "100%" }}/>
+            </div>
+            <div style={{ border: "3px solid #73AD21", position: "absolute", left: "45%", top: "72%", width: "10%"}}>
+              <img src={cat} alt="cat" style={{ width: "100%" }} />
+            </div>
+          </div>
         </div>
       </div>
     </header>
