@@ -4,8 +4,22 @@ import cat from './Noto_Emoji_Pie_1f408.svg';
 import couch from './Noto_Emoji_Pie_1f6cb.svg'
 import './App.css';
 
+const cards = [
+  {
+    couch: {left: "10%", top: "15%", width: "80%"},
+    cat: {left: "45%", top: "72%", width: "10%"},
+    text: "Die Katze sitzt unter dem Sofa."
+  },
+  {
+    couch: {left: "10%", top: "15%", width: "80%"},
+    cat: {left: "45%", top: "59%", width: "10%"},
+    text: "Die Katze sitzt auf dem Sofa."
+  }
+];
+
 function Card() {
   let { cardNumber } = useParams();
+  let card = cards[parseInt(cardNumber || "0") % cards.length];
 
   return (
       <div className="card">
@@ -14,11 +28,14 @@ function Card() {
             <h1>Number: {cardNumber}</h1>
           </div>
           <div className="card-back">
-            <div style={{border: "3px solid #73AD21", position: "absolute", left: "10%", top: "15%", width: "80%"}}>
+            <div style={{border: "3px solid #73AD21", position: "absolute", ...card.couch}}>
               <img src={couch} alt="couch" style={{width: "100%"}}/>
             </div>
-            <div style={{border: "3px solid #73AD21", position: "absolute", left: "45%", top: "72%", width: "10%"}}>
+            <div style={{border: "3px solid #73AD21", position: "absolute", ...card.cat}}>
               <img src={cat} alt="cat" style={{width: "100%"}}/>
+            </div>
+            <div style={{border: "3px solid #73AD21", position: "absolute", textAlign: "center", left: "10%", top: "90%", width: "80%"}}>
+              {card.text}
             </div>
           </div>
         </div>
@@ -35,10 +52,10 @@ function App() {
               <Link to="/">Default</Link>
             </li>
             <li>
-              <Link to="/card/1">Card 1</Link>
+              <Link to="/card/0">Card 1</Link>
             </li>
             <li>
-              <Link to="/card/2">Card 2</Link>
+              <Link to="/card/1">Card 2</Link>
             </li>
           </ul>
 
