@@ -13,8 +13,14 @@ function Card() {
       <p>
         Number: {cardNumber}
       </p>
-      <img src={cat} className="cat" alt="cat" />
-      <img src={couch} className="couch" alt="couch" />
+      <div style={{ border: "3px solid #73AD21", position: "relative", width: "400px", height: "500px"}}>
+        <div style={{ border: "3px solid #73AD21", position: "absolute", left: "10%", top: "15%", width: "80%" }}>
+          <img src={couch} alt="couch" style={{ width: "100%" }}/>
+        </div>
+        <div style={{ border: "3px solid #73AD21", position: "absolute", left: "45%", top: "72%", width: "10%"}}>
+          <img src={cat} alt="cat" style={{ width: "100%" }} />
+        </div>
+      </div>
     </header>
   </div>);
 }

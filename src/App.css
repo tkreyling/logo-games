@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.couch {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.cat {
-  height: 10vmin;
-  pointer-events: none;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
