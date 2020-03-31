@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {HashRouter as Router, Link, Route, Switch, useParams} from "react-router-dom";
 import cat from './Noto_Emoji_Pie_1f408.svg';
 import couch from './Noto_Emoji_Pie_1f6cb.svg'
@@ -20,10 +20,11 @@ const cards = [
 function Card() {
   let { cardNumber } = useParams();
   let card = cards[parseInt(cardNumber || "0") % cards.length];
+  let [isFlipped, setFlipped] = useState(false);
 
   return (
-      <div className="card">
-        <div className="card-inner">
+      <div className="card" onClick={(_) => {setFlipped(!isFlipped)}}>
+        <div className={"card-inner" + (isFlipped ? " is-flipped" : "")}>
           <div className="card-front">
             <h1>Number: {cardNumber}</h1>
           </div>
